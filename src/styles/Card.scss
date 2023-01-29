@@ -12,7 +12,8 @@
     color: white;
     background-color: rgba(57, 58, 62, 0.5);
     height: 83.5vh;
-    width: 40%;
+    width: fit-content;
+    padding-right: 5vw;
     position: absolute;
     margin: 2vh;
     border-radius: 3vh;
@@ -53,7 +54,6 @@
                 font-size: 1.15vw;
                 font-weight: bolder;
                 line-height: 2.5vw;
-                
             }
 
             .size {
@@ -63,16 +63,17 @@
 
                 border-radius: 1.25vh;
                 margin-left: 1vw;
-                h2 {
-                    font-size: 1.15vw;
-                    margin: auto;
-                    vertical-align: top;
-                    margin-top: 0.5vw;
-                    margin-bottom: 0.5vw;
-                }
                 display: inline-block;
                 flex-direction: column;
+
+                p{
+                    line-height: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+
                 .blocks {
+
                     pointer-events: none;
                     width: fit-content;
                     margin: auto;
@@ -81,6 +82,7 @@
                     display: grid;
                     flex-direction: row;
                     flex-wrap: wrap;
+                    
 
                     .block {
                         background-color: rgba(154, 152, 178, 0.25);
@@ -146,7 +148,7 @@
             margin-left: 4vw;
             width: 7vw;
             height: 9vw;
-            background-image: url("res/onda.svg");
+            background-image: url("../res/onda.svg");
             background-size: contain;
             background-repeat: no-repeat;
         }

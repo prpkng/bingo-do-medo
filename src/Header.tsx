@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './styles/App.css'
 class PageHeader extends React.Component{
     render(){
         return (

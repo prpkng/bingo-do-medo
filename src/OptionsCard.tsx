@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Card.css'
+import './styles/Card.css'
 
 function createGrid(gridSize: number): Array<React.ReactNode> {
     let grid: Array<React.ReactNode> = [];
@@ -17,7 +17,7 @@ function OptionsCard() {
     const [selected, setSelected] = useState('s1');
 
     const handleOnChange = (data: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(data.target.id);        
+         
         setSelected(data.target.id);
     }
 
@@ -29,19 +29,19 @@ function OptionsCard() {
                     <div className="editbtn"></div>
                     <div className="sizes">
                         <input type="radio" name="sizes" id="s1" checked={selected === 's1'} onChange={handleOnChange}/>
-                        <label htmlFor="s1" className='s1 size' id='size-label'> 3x3
+                        <label htmlFor="s1" className='s1 size' id='size-label'> <p>3x3</p>
                             <div className="blocks">
                                 {createGrid(3)}
                             </div>
                         </label>
                         <input type="radio" name="sizes" id="s2" checked={selected === 's2'} onChange={handleOnChange}/>
-                        <label htmlFor="s2" className='s2 size' id='size-label'> 4x4
+                        <label htmlFor="s2" className='s2 size' id='size-label'> <p>4x4</p>
                             <div className="blocks">
                                 {createGrid(4)}
                             </div>
                         </label>
                         <input type="radio" name="sizes" id="s3" checked={selected === 's3'} onChange={handleOnChange}/>
-                        <label htmlFor="s3" className='s3 size' id='size-label'> 5x5
+                        <label htmlFor="s3" className='s3 size' id='size-label'> <p>5x5</p>
                             <div className="blocks">
                                 {createGrid(5)}
                             </div>

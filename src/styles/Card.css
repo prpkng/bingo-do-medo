@@ -9,7 +9,8 @@
   color: white;
   background-color: rgba(57, 58, 62, 0.5);
   height: 83.5vh;
-  width: 40%;
+  width: fit-content;
+  padding-right: 5vw;
   position: absolute;
   margin: 2vh;
   border-radius: 3vh;
@@ -57,12 +58,10 @@
   display: inline-block;
   flex-direction: column;
 }
-.card .top-part .sizes .size h2 {
-  font-size: 1.15vw;
-  margin: auto;
-  vertical-align: top;
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
+.card .top-part .sizes .size p {
+  line-height: 0;
+  width: 100%;
+  text-align: center;
 }
 .card .top-part .sizes .size .blocks {
   pointer-events: none;
@@ -125,7 +124,7 @@
   margin-left: 4vw;
   width: 7vw;
   height: 9vw;
-  background-image: url("res/onda.svg");
+  background-image: url("../res/onda.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
