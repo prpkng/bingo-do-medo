@@ -1,21 +1,23 @@
 import React from 'react';
+import OptionsCard from "./OptionsCard"
+import PageHeader from "./Header"
 import './App.css';
-function App() {
-  return (
-    <div className="App">
-      <div className='page'>
-        <div className='page-blur'></div>
-        <header className='cell-header'>
-          <div id='txt-and-logo'>
-            <div className='cell-logo'></div>
-            <h1>BINDO DO MEDO</h1>
-          </div>
-        </header>
 
-        
+
+class App extends React.Component{
+  render(): React.ReactNode {
+    return (
+      <div className="App">
+        <div className='page'>
+          <div className='page-blur'></div>
+          
+          <PageHeader />
+          <OptionsCard />
+  
+        </div>
       </div>
-    </div>
-  );
+    )
+  }
 }
 
 export default App;

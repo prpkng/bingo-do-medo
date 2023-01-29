@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&family=Work+Sans&display=swap");
+
+.card {
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    font-family: "Inria Sans", "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    color: white;
+    background-color: rgba(57, 58, 62, 0.5);
+    height: 83.5vh;
+    width: 40%;
+    position: absolute;
+    margin: 2vh;
+    border-radius: 3vh;
+    margin-bottom: 2vh;
+
+    .top-part {
+
+
+        
+        display: flex;
+        flex-direction: column;
+        #txt {
+            text-indent: 3vw;
+            text-align: left;
+        }
+
+        .sizes {
+            display: flex;
+            flex-direction: row;
+            padding-left: 1vw;
+            input{
+                position: fixed;
+                opacity: 0;
+                pointer-events: none;
+            }
+            input:hover+label{
+                background-color: rgba(103, 104, 117, 0.35);
+                cursor: pointer;
+            }
+            input:checked+label{
+                background-color: rgba(143, 144, 168, 0.521);
+            }
+            label{
+                transition: 100ms ease-in-out;
+            }
+
+            #size-label{
+                font-size: 1.15vw;
+                font-weight: bolder;
+                line-height: 2.5vw;
+                
+            }
+
+            .size {
+                width: 7vw;
+                height: 9vw;
+                background-color: rgba(84, 85, 95, 0.25);
+
+                border-radius: 1.25vh;
+                margin-left: 1vw;
+                h2 {
+                    font-size: 1.15vw;
+                    margin: auto;
+                    vertical-align: top;
+                    margin-top: 0.5vw;
+                    margin-bottom: 0.5vw;
+                }
+                display: inline-block;
+                flex-direction: column;
+                .blocks {
+                    pointer-events: none;
+                    width: fit-content;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    display: grid;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .block {
+                        background-color: rgba(154, 152, 178, 0.25);
+                    }
+                }
+            }
+
+            .s1 {
+                .blocks {
+                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 0.6vw;
+                }
+                .block {
+                    width: 1.55vw;
+                    height: 1.55vw;
+                    border-radius: 0.5vw;
+                    margin: auto;
+                }
+            }
+            .s2 {
+                .blocks {
+                    grid-template-rows: 1fr 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    gap: 0.4vw;
+                }
+
+                .block {
+                    width: 1.15vw;
+                    height: 1.15vw;
+                    border-radius: 0.25vw;
+                }
+            }
+            .s3 {
+                .blocks {
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                    gap: 0.3vw;
+                }
+                .block {
+                    width: 0.9vw;
+                    height: 0.9vw;
+                    border-radius: 0.25vw;
+                }
+            }
+        }
+    }
+    .qnt-bingos {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        text-indent: 3vw;
+        text-align: left;
+    }
+
+    .ext {
+        margin-bottom: 3vw;
+        width: 65%;
+        text-indent: 3vw;
+        text-align: left;
+
+        .onda {
+            margin-top: 1vw;
+            margin-left: 4vw;
+            width: 7vw;
+            height: 9vw;
+            background-image: url("res/onda.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
